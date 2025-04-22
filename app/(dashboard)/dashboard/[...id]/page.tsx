@@ -1,15 +1,15 @@
 'use client'
-
+import React from 'react'
 import { useParams } from 'next/navigation'
 
-function ID() {
- const params = useParams()
- const {id} = params
+function page() {
+  const params = useParams()
+  const {id} = params
   return (
     <div>
-        {id}
+      <h1>User ID {id}</h1>
     </div>
   )
 }
 
-export default ID
+export default page
