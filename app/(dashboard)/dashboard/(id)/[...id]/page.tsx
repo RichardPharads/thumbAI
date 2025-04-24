@@ -22,8 +22,8 @@ function page() {
 
   return (
     <div>
-      <h1>{id}</h1>
-      <h1>{user?.name}</h1>
+      <h1 className='text-lg'>{id}</h1>
+      <h1 className='text-2xl'>{user?.name}</h1>
       <h2>{user?.username}</h2>
       <p>{user?.email}</p>
     </div>

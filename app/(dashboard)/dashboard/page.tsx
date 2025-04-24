@@ -35,10 +35,10 @@ export default function Dashboard() {
       <h1 className="text-3xl font-bold">User Dashboard</h1>
   
       
-      <ul className="divide-y divide-gray-200">
-        {datas.map((user) => (
-           <Link href={`/dashboard/${user.id}`}>
-          <li key={user.id} className="py-4">
+      <ul className="p-10 gap-5 grid grid-cols-1 sm:grid-cols-5 ">
+        {datas?.map((user) => (
+           <Link key={user.id} href={`/dashboard/${user.id}`}>
+          <li  className="px-4 py-8 max-w-[300px] border rounded-2xl ">
             <h2 className="text-xl font-semibold">{user.name}</h2>
             <p className="text-gray-600">{user.email}</p>
             <p>{user.username}</p>

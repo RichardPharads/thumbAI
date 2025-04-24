@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes pulse-gray {
+  0%, 100% {
+    background-color: rgb(48, 48, 48);
+  }
+  50% {
+    background-color: #131313; /* Tailwind gray-300 */
+  }
+}
+
+.animate-pulse-gray {
+  animation: pulse-gray 2s ease-in-out infinite;
+}
