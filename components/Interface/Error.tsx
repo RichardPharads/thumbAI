@@ -2,7 +2,7 @@ import React from 'react'
 
 function Error() {
   return (
-    <h1 className='text-5xl text-red-600'>Error </h1>
+    <div className='text-4xl font-bold text-red-500'>Error</div>
   )
 }
 
